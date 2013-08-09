@@ -7,6 +7,7 @@ const jwcrypto = require('jwcrypto'),
       request = require('supertest'),
       should = require('should'),
       spawn = require('child_process').spawn;
+require("jwcrypto/lib/algs/rs"); // needed for generateKeypair
 
 var runLocallyPath = path.join(__dirname, '..', '..', 'scripts', 'run_locally.js');
 var runLocally;
